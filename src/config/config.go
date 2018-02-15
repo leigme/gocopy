@@ -53,11 +53,11 @@ func LoadConfig() (cb *ConfigBean) {
 
 // GetValidByte 去除空字符串
 func GetValidByte(src []byte) []byte {
-	var str_buf []byte
+	var strBuf []byte
 	for _, v := range src {
 		if v != 0 {
-			str_buf = append(str_buf, v)
+			strBuf = append(strBuf, v)
 		}
 	}
-	return str_buf
+	return strBuf
 }

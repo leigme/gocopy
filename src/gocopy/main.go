@@ -9,9 +9,7 @@ func main() {
 	fmt.Println("app start...")
 
 	cb := config.LoadConfig()
-
-	fmt.Println(cb.InFilePath)
-	fmt.Println(cb.OutFilePath)
+	copyFiles(cb.InFilePath, cb.OutFilePath)
 
 	fmt.Println("app end!")
 }
