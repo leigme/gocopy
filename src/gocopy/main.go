@@ -8,7 +8,10 @@ import (
 func main() {
 	fmt.Println("app start...")
 
-	config.LoadConfig()
+	cb := config.LoadConfig()
+
+	fmt.Println(cb.InFilePath)
+	fmt.Println(cb.OutFilePath)
 
 	fmt.Println("app end!")
 }
